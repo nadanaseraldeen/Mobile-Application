@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         ),
         body: ListView(
           children: [
-            Student(image: '1.jpeg', id:1, name:'Nada', major:'Information Technology',average: 80),
+            Student(image: '1.jpeg', id:1, name:'Nada', major:'Information Technology',average: 60),
             Student(image: '2.jpeg', id:2, name:'Ruba', major:'Accounting',average: 60),
             Student(image: '3.jpeg', id:3, name:'Sara', major:'Computer Sciense', average: 100),
             Student(image: '4.jpeg', id:4, name:'Maya', major:'Computer Engineering',average:50)
@@ -75,12 +75,14 @@ class Student extends StatelessWidget {
         Text('Majore: $major', style: TextStyle(fontSize: 14)),
         Text('Average: $average', style: TextStyle(fontSize: 14)),
       Row(
+
         children: List.generate(
           starsCount,
               (_) => Icon(
             Icons.star,
             color: Colors.yellow,
             size: 22.0,
+
 
 
 
